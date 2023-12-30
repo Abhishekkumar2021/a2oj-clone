@@ -21,7 +21,7 @@ type Ladder = {
 export default async function LadderPage({ params } : PropType) {
     let ladder : Ladder = null;
     try{
-        const {data} = await axios.get(`http://localhost:3000/api/ladders/${params.ladderName}`);
+        const {data} = await axios.get(`https://a2ojapp.vercel.app/api/ladders/${params.ladderName}`);
         ladder = data;
     }catch(e){
         console.log(e);

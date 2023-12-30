@@ -10,7 +10,7 @@ type Ladder = {
 export default async function LaddersPage() {
     let ladders: Ladder[] | undefined;
     try {
-        const { data } = await axios.get('http://localhost:3000/api/ladders');
+        const { data } = await axios.get('https://a2ojapp.vercel.app/api/ladders');
         ladders = data;
     }
     catch (err) {
