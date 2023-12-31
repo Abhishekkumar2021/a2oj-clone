@@ -33,19 +33,19 @@ export default async function LadderPage({ params } : PropType) {
             <table className="table-auto w-auto mt-10">
                 <thead className="text-left">
                     <tr className="uppercase text-sm leading-normal">
-                        <th className="px-4 py-2 text-2xl">Name</th>
-                        <th className="px-4 py-2 text-2xl">Difficulty</th>
+                        <th className="px-4 py-2 text-xl">Name</th>
+                        <th className="px-4 py-2 text-xl">Difficulty</th>
                     </tr>
                 </thead>
                 <tbody>
                     {ladder?.problems.map((problem, index) => (
                         <tr key={index}>
-                            <td className="px-5 py-3 border-2 border-gray-500">
+                            <td className="px-4 py-3 border-2 border-gray-500">
                                 <Link href={problem?.url || ""} className="hover:text-blue-300 hover:underline">
                                     {problem?.name}
                                 </Link>
                             </td>
-                            <td className="px-5 py-3 border-2 border-gray-500">{problem?.difficulty}</td>
+                            <td className="px-4 py-3 border-2 border-gray-500">{problem?.difficulty}</td>
                         </tr>
                     ))}
                 </tbody>
