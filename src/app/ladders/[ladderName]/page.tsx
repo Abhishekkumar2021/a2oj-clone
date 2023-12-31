@@ -40,8 +40,8 @@ export default async function LadderPage({ params } : PropType) {
                 <tbody>
                     {ladder?.problems.map((problem, index) => (
                         <tr key={index}>
-                            <td className="px-4 py-3 border-2 border-gray-500">
-                                <Link href={problem?.url || ""} className="hover:text-blue-300 hover:underline">
+                            <td className="px-4 py-3 border-2 border-gray-500 bg-gray-800">
+                                <Link href={problem?.url || ""} className="hover:text-blue-300 p-1 hover:underline visited:text-green-500">
                                     {problem?.name}
                                 </Link>
                             </td>
